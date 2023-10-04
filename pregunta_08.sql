@@ -43,5 +43,5 @@
 --
 SELECT strftime('%Y', tbl2.c23) AS "YEAR", round(avg(c21),6) AS "avg(c21)"
 FROM tbl2
-GROUP BY "YEAR"
-ORDER BY "YEAR";
+GROUP BY strftime('%Y', tbl2.c23) 
+ORDER BY strftime('%Y', tbl2.c23);
