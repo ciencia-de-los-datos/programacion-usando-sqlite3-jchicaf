@@ -24,5 +24,5 @@
 --  
 SELECT *
 FROM tbl1
-ORDER BY c14
+ORDER BY tbl1.c14
 LIMIT 5
